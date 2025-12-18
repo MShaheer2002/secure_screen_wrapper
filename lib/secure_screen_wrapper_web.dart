@@ -301,7 +301,6 @@ class SecureScreenWrapperWeb {
   /// Detect if DevTools is open
   void _detectDevTools() {
     // This is a heuristic - not 100% reliable but helps
-    final threshold = 160;
     web.window.outerWidth;
     web.window.outerHeight;
     
