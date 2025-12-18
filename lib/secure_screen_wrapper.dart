@@ -10,10 +10,10 @@ class SecureScreenWrapper extends StatefulWidget {
   final bool enabled;
 
   const SecureScreenWrapper({
-    Key? key,
+    super.key,
     required this.child,
     this.enabled = true,
-  }) : super(key: key);
+  });
 
   @override
   State<SecureScreenWrapper> createState() => _SecureScreenWrapperState();
