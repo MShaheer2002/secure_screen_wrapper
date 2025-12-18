@@ -73,13 +73,13 @@ SecureScreenWrapper(
 ##  Platform Setup
 
 ### Android
-No additional setup required! ✅
+No additional setup required!
 
 ### iOS
-No additional setup required! ✅
+No additional setup required!
 
 ### Web
-No additional setup required! ✅
+No additional setup required!
 
 ##  Important Notes
 
@@ -98,6 +98,33 @@ Widget that protects its child from screenshots.
 
 ### `SecureScreen`
 Global security control.
+
+## Web Platform Limitations
+
+**IMPORTANT**: Web browsers **cannot completely block screenshots** at the OS level due to browser security restrictions. 
+
+### What Web Protection Does:
+Disables right-click context menu
+Blocks text selection and copy
+Prevents common keyboard shortcuts (PrintScreen, Ctrl+Shift+S, etc.)
+Blurs content when tab loses focus
+Adds watermark overlay
+Blocks developer tools shortcuts
+Prevents drag and drop of images
+
+### What Web Protection CANNOT Do:
+Block OS-level screenshot tools (Windows Snipping Tool, macOS Cmd+Shift+4, etc.)
+Block browser extensions that capture screenshots
+Block external screen capture devices/software
+Prevent screenshots if JavaScript is disabled
+
+### Recommendation:
+For truly sensitive data on web, consider:
+1. Using session-based access with time limits
+2. Adding visible watermarks with user info
+3. Implementing server-side watermarking
+4. Using DRM-protected content delivery
+5. Requiring authentication and logging access
 
 **Methods:**
 - `SecureScreen.enable()`: Enable protection globally
