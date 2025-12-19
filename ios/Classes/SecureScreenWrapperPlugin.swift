@@ -40,9 +40,14 @@ public class SecureScreenWrapperPlugin: NSObject, FlutterPlugin {
             window.addSubview(field)
             
             // Center it (though it's invisible/hidden behind content essentially)
-            field.translatesAutoresizingMaskIntoConstraints = false
-            field.centerYAnchor.constraint(equalTo: window.centerYAnchor).isActive = true
-            field.centerXAnchor.constraint(equalTo: window.centerXAnchor).isActive = true
+            // Ensure the field fills the entire window bounds
+            field.frame = window.bounds
+            field.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            
+            // Center it (though it's invisible/hidden behind content essentially)
+            // field.translatesAutoresizingMaskIntoConstraints = false
+            // field.centerYAnchor.constraint(equalTo: window.centerYAnchor).isActive = true
+            // field.centerXAnchor.constraint(equalTo: window.centerXAnchor).isActive = true
             
             // The Layer Hack:
             // 1. Move field's layer to be a sibling of the window's layer (in the superlayer)
