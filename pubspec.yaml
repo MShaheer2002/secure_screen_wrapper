@@ -1,6 +1,6 @@
 name: secure_screen_wrapper
 description: Prevent screenshots on Android, iOS, and Web. Blocks screenshots on Android, makes them black on iOS, and adds protection layers on Web.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/MShaheer2002/secure_screen_wrapper
 repository: https://github.com/MShaheer2002/secure_screen_wrapper
 issue_tracker: https://github.com/MShaheer2002/secure_screen_wrapper/issues

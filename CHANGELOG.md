@@ -1,3 +1,7 @@
+## 1.0.1
+
+* Fixed iOS screenshot protection layout issues.
+
 ## 1.0.0
 
 * Initial release
