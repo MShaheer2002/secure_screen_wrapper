@@ -26,7 +26,7 @@ A Flutter package that prevents screenshots and screen recording across **Androi
 Add to your `pubspec.yaml`:
 ```yaml
 dependencies:
-  secure_screen_wrapper: ^1.0.0
+  secure_screen_wrapper: ^1.0.2
 ```
 
 Run:
